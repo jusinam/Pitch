@@ -1,34 +1,29 @@
 from flask import Flask
-from flask_bootstrap import Bootstrap
-from config import config_options
+from flask_login import LoginManager
 from flask_sqlalchemy import SQLAlchemy
+from flask_bootstrap import Bootstrap
+from flask_mail import Mail
+from config import Config
 
 
-bootstrap = Bootstrap()
-db = SQLAlchemy()
+app = Flask(__name__)
+db = SQLAlchemy(app)
 
-def create_app(config_name):
+login_manager = LoginManager(app)
+bootstrap = Bootstrap(app)
+mail = Mail(app)
 
-    app = Flask(__name__)
+login_manager.login_view = 'auth.login'
+login_manager.session_protection = 'strong'
 
-    # Creating the app configurations
+def create_app():
 
-    app.config.from_object(config_options[config_name])
-    config_options[config_name].init_app(app)
+    app.config.from_object(Config)
 
-    # Initializing flask extensions
-    bootstrap.init_app(app)
-    db.init_app(app)
-
-
-    # Registering the blueprint
+    from .auth import auth as auth_blueprint
     from .main import main as main_blueprint
+
+    app.register_blueprint(auth_blueprint)
     app.register_blueprint(main_blueprint)
-
-    # setting config
     
-
-
-
-
     return app
