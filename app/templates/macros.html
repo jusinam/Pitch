@@ -1,0 +1,47 @@
+{% macro showPitch(pitches) %} 
+   {% for pitch in pitches %}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            
+        <div class="card mt-5">
+            <div class="card-header" >
+                <b>{{pitch.category}}</b>
+            </div>
+            <div class="car-body">
+                
+                <p class="card-text">
+                    <i><strong>{{pitch.title}}</strong></i><br>
+                    <i>{{pitch.content}}</i><br>
+                    
+                    
+                </p>
+
+                <div>
+                    
+                    
+                    <a  href="{{url_for('main.comment',pitch_id=pitch.id)}}">Comment</a>&ensp;
+                </div>
+
+                
+
+            </div>
+            
+                <li class="list-group-item">  <strong>Pitched by:</strong> {{pitch.author}}&nbsp;&nbsp;  <strong>on:</strong> <small>{{pitch.date_posted.strftime('%d-%m-%Y %H:%M')}}</small></li>
+                <li class="list-group-item"> <a  href="">Vote Up </a>&ensp;
+                    <a  href="">Vote Down </a>&ensp; </li>
+               
+               
+            </ul>
+        </div>
+
+        </div>
+
+    </div>
+</div>
+
+{% endfor %} 
+{% endmacro %} 
