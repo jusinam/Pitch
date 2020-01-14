@@ -7,7 +7,7 @@ Mpasho is a news highlight application that gives access to the users about what
 
 ### Pitch
 
-![Pitch ](src/assets/read.png)
+![alt text](ha.png)
 
 
 ## BDD

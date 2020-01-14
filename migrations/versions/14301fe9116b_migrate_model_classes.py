@@ -1,8 +1,8 @@
 """migrate model classes
 
-Revision ID: 3b310c3520d3
+Revision ID: 14301fe9116b
 Revises: 
-Create Date: 2020-01-13 22:07:12.625787
+Create Date: 2020-01-14 12:50:37.078605
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = '3b310c3520d3'
+revision = '14301fe9116b'
 down_revision = None
 branch_labels = None
 depends_on = None

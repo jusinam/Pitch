@@ -11,16 +11,16 @@ class CommentModelTest(unittest.TestCase):
         """
         Set up method that will run before every Test
         """
-        self.content= Content(content = 'pitching')
+        self.content= Comment(content = 'pitching')
 
 
     def tearDown(self):
-        Content.query.delete()
+        Comment.query.delete()
 
 
     def test_instance(self):
-        self.assertTrue(isinstance(self.content, Content))
+        self.assertTrue(isinstance(self.content, Comment))
 
 
     def test_check_instance_variables(self):
-        self.assertEquals(self.content.content,'pitchin')
+        self.assertEquals(self.content.content,'pitching')
