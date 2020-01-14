@@ -1,5 +1,5 @@
 # PITCH
-Mpasho is a news highlight application that gives access to the users about what is happening worldwide. The application posses news from different sources.
+Pitch is a flask application that allows users to add pitches and other users able to vote on them. The pitches are categorized.
 
 ## Author
 * Evans Nyambane
