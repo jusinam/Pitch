@@ -2,7 +2,7 @@
 Pitch is a flask application that allows users to add pitches and other users able to vote on them. The pitches are categorized.
 
 ## Author
-* Evans Nyambane
+* Evans Onchagwa
 
 
 ### Pitch
@@ -74,9 +74,9 @@ No known bugs
 
 #### Collaborate
 >Incase of any questions, problems ideas concerning the app, feel free to reach out to me:
->>Github: [Evans Nyambane](https://github.com/DjCooGie)
+>>Github: [Evans Onchagwa](https://github.com/jusinam)
 >>Email: evansonchagwa01@gmail.com
 
 #### License
 MIT
-&copy;2020 Evans Nyambane
+&copy;2020 Evans Onchagwa
