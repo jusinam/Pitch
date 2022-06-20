@@ -2,7 +2,7 @@
 Pitch is a flask application that allows users to add pitches and other users able to vote on them. The pitches are categorized.
 
 ## Author
-* Evans Onchagwa
+* Evans ON
 
 
 ### Pitch
@@ -38,7 +38,7 @@ Pitch is a flask application that allows users to add pitches and other users ab
   Here's a brief intro about what a developer must do in order to start running the app locally:
 
   ```
-  $ git clone https://github.com/DjCooGie/Pitch.git
+  $ git clone https://github.com/jusinam/Pitch.git
   $ cd Pitch/
   ```
   * create a virtual environment
@@ -70,13 +70,12 @@ Pitch is a flask application that allows users to add pitches and other users ab
 No known bugs
 
 ## Live Site link
-[https://evan-pitch-ups.herokuapp.com/](https://evan-pitch-ups.herokuapp.com/)
+[Click here](https://evan-pitch-ups.herokuapp.com/)
 
 #### Collaborate
 >Incase of any questions, problems ideas concerning the app, feel free to reach out to me:
->>Github: [Evans Onchagwa](https://github.com/jusinam)
->>Email: evansonchagwa01@gmail.com
+>>Email: [Send mail](mailto:evansonchagwa01@gmail.com)
 
 #### License
 MIT
-&copy;2020 Evans Onchagwa
+&copy;2020 Evans ON
